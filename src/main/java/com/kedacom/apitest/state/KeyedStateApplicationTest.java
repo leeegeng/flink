@@ -13,7 +13,9 @@ import org.apache.flink.util.Collector;
 
 import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
 
-//
+/**
+ * keyed state测试
+ */
 public class KeyedStateApplicationTest {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();

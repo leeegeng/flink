@@ -26,6 +26,12 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Comparator;
 
+/**
+ * 状态统计，每日统计一次，从0点开始
+ * 统计设备当前状态连续时长，以及每天设备过车数据
+ * 采用ValueState保持前一天过车统计
+ * MapState 考虑扩展使用，周统计可考虑采用缓存每天数据，每周一定时统计
+ */
 public class StatusStatisticsByDay {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();

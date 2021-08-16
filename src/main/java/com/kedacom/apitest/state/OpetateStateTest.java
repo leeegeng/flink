@@ -18,6 +18,9 @@ import org.apache.flink.table.expressions.In;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * operate state 测试
+ */
 public class OpetateStateTest {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();

@@ -7,9 +7,9 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.util.Collector;
 
-// 提交参数
-// com.kedacom.wc.StreamWordCount
-// --host 172.16.64.85 --port 9999
+/**
+ * 文件提取，转成DataStream
+ */
 public class StreamWordCount {
     public static void main(String[] args) throws Exception {
         System.out.println("test");

@@ -6,6 +6,10 @@ import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.util.Collector;
 
+/**
+ * DataSet
+ * 批处理文件
+ */
 public class WordCount {
     public static void main(String[] args) throws Exception {
         System.out.println("test");

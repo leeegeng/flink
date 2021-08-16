@@ -8,6 +8,9 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
+/**
+ * 模拟构造数据输入
+ */
 public class DeviceInfoReading {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();

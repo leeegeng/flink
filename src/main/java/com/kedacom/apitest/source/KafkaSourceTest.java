@@ -12,6 +12,9 @@ import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer;
 import java.util.Arrays;
 import java.util.Properties;
 
+/**
+ * kafka数据源测试
+ */
 public class KafkaSourceTest {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();

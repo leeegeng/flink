@@ -13,6 +13,9 @@ import org.apache.flink.table.functions.AggregateFunction;
 import org.apache.flink.table.runtime.aggregate.AggregateAggFunction;
 import org.apache.flink.types.Row;
 
+/**
+ * sql udf 测试
+ */
 public class UdfAggregateFunctionTest {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();

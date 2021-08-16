@@ -24,7 +24,11 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.concurrent.TimeUnit;
 
-// topN 过车数据
+/**
+ * topN 过车数据排名
+ * 思路：1 aggregate聚合函数，采用两个参数：聚合和开窗，对窗口内数据进行统计
+ * 2 然后再按窗口结束时间keyby，对过车数据按窗口结束时间排序
+ */
 public class TopNFunction {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();

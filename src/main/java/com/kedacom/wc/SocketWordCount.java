@@ -9,9 +9,11 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.util.Collector;
 
 @Slf4j
-// 提交参数
-// com.kedacom.wc.StreamWordCount
-// --host 172.16.64.85 --port 9999
+/**
+ * 从socket读取文本流，计算单词个数
+ * 可从FlinkUI提交jar包，包名：com.kedacom.wc.StreamWordCount，参数：--host 172.16.64.85 --port 9999
+ */
+
 public class SocketWordCount {
     public static void main(String[] args) throws Exception {
         System.out.println("test");
